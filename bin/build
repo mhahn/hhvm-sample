@@ -1,0 +1,2 @@
+#!/bin/bash
+./bin/hhvm hhvm bin/build.hh

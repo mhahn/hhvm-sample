@@ -1,0 +1,18 @@
+{
+    "name": "slack/sample",
+    "require-dev": {
+        "hackpack/hackunit": "^1.0"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "zendframework/zend-diactoros": "^1.1",
+        "fredemmott/definition-finder": "^1.4.3",
+        "fredemmott/hhvm-autoload": "^1.2.0",
+        "fredemmott/type-assert": "^1.0.0",
+        "fredemmott/hack-router-codegen": "^1.0.0rc2",
+        "fredemmott/hack-router": "^v1.0.0rc7"
+    }
+}

@@ -1,0 +1,640 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "b65881d20b09cce4644ef3f8eb96adf4",
+    "packages": [
+        {
+            "name": "91carriage/phpunit-hhi",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://git.simon.geek.nz/91-carriage/phpunit-hhi.git",
+                "reference": "7dc3b83def16d77eb4a9757d5ca7bfc11fd9deff"
+            },
+            "require": {
+                "hhvm": ">=3.9.0"
+            },
+            "conflict": {
+                "phpunit/phpunit": "<5.7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "suggest": {
+                "91carriage/dbunit-hhi": "HHI files for use with DbUnit"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.7.x-dev",
+                    "dev-phpunit-5.6": "5.6.x-dev",
+                    "dev-phpunit-5.5": "5.5.x-dev",
+                    "dev-phpunit-5.4": "5.4.x-dev",
+                    "dev-phpunit-5.3": "5.3.x-dev",
+                    "dev-phpunit-5.2": "5.2.x-dev",
+                    "dev-phpunit-5.1": "5.1.x-dev",
+                    "dev-phpunit-5.0": "5.0.x-dev",
+                    "dev-phpunit-4.8": "4.8.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "HHI definitions for PHPUnit",
+            "homepage": "https://git.simon.geek.nz/91-carriage/phpunit-hhi",
+            "keywords": [
+                "hack",
+                "hhvm",
+                "phpunit",
+                "testing"
+            ],
+            "time": "2016-10-18 09:47:11"
+        },
+        {
+            "name": "facebook/hack-codegen",
+            "version": "v1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/facebook/hack-codegen.git",
+                "reference": "aa7af566faa123b1ab39dd168d40890e2af7fe31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/facebook/hack-codegen/zipball/aa7af566faa123b1ab39dd168d40890e2af7fe31",
+                "reference": "aa7af566faa123b1ab39dd168d40890e2af7fe31",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/utils.php",
+                    "lib/Str.php",
+                    "lib/StrBuffer.php",
+                    "lib/Filesystem.php",
+                    "src/SignedSourceBase.php",
+                    "src/SignedSource.php",
+                    "src/PartiallyGeneratedSignedSource.php",
+                    "src/PartiallyGeneratedCode.php",
+                    "src/HackBuilderKeys.php",
+                    "src/HackBuilderValues.php",
+                    "src/IHackCodegenConfig.php",
+                    "src/HackCodegenConfig.php",
+                    "src/CodegenWithVisibility.php",
+                    "src/ICodeBuilderRenderer.php",
+                    "src/ICodeBuilder.php",
+                    "src/HackBuilderRenderer.php",
+                    "src/BaseCodeBuilder.php",
+                    "src/HackBuilder.php",
+                    "src/ICodegenFormatter.php",
+                    "src/CodegenClassBase.php",
+                    "src/CodegenClass.php",
+                    "src/CodegenFunctionBase.php",
+                    "src/CodegenMethodBase.php",
+                    "src/CodegenConstructor.php",
+                    "src/CodegenEnum.php",
+                    "src/CodegenFile.php",
+                    "src/CodegenFunction.php",
+                    "src/CodegenGeneratedFrom.php",
+                    "src/CodegenImplementsInterface.php",
+                    "src/CodegenInterface.php",
+                    "src/CodegenMemberVar.php",
+                    "src/CodegenMethod.php",
+                    "src/CodegenShape.php",
+                    "src/CodegenTrait.php",
+                    "src/CodegenType.php",
+                    "src/CodegenUsesTrait.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Drew Hoskins",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Gaurav Kumar",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Alejandro Marcu",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Matthieu Martin",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Hack Codegen is a library for programatically generating Hack code",
+            "keywords": [
+                "code generation",
+                "hack"
+            ],
+            "abandoned": true,
+            "time": "2016-01-25T21:06:57+00:00"
+        },
+        {
+            "name": "fredemmott/definition-finder",
+            "version": "v1.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fredemmott/definition-finder.git",
+                "reference": "3ba10a36b48a2f298534ae497da758a9f50bc3ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fredemmott/definition-finder/zipball/3ba10a36b48a2f298534ae497da758a9f50bc3ac",
+                "reference": "3ba10a36b48a2f298534ae497da758a9f50bc3ac",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "~3.12"
+            },
+            "require-dev": {
+                "91carriage/phpunit-hhi": "~5.1",
+                "hhvm/systemlib-extractor": "^0.1.0",
+                "phpunit/phpunit": "~5.1"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ],
+                "files": [
+                    "autoload_files.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Find definitions in PHP or Hack files. Useful for autoloaders.",
+            "homepage": "https://github.com/fredemmott/definitions-finder",
+            "keywords": [
+                "autoload",
+                "definitions",
+                "hack",
+                "hhvm"
+            ],
+            "time": "2017-01-27T04:46:46+00:00"
+        },
+        {
+            "name": "fredemmott/hack-error-suppressor",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fredemmott/hack-error-suppressor.git",
+                "reference": "acaba332c5597455b9900388b00b11a53d773a93"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fredemmott/hack-error-suppressor/zipball/acaba332c5597455b9900388b00b11a53d773a93",
+                "reference": "acaba332c5597455b9900388b00b11a53d773a93",
+                "shasum": ""
+            },
+            "require-dev": {
+                "91carriage/phpunit-hhi": "^5.6",
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "authors": [
+                {
+                    "name": "Fred Emmott",
+                    "email": "fred@fredemmott.co.uk"
+                }
+            ],
+            "description": "Suppress HHVM's automatic conversion of typechecker errors to fatals.",
+            "time": "2017-01-23T01:19:07+00:00"
+        },
+        {
+            "name": "fredemmott/hack-router",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fredemmott/hack-router.git",
+                "reference": "c909dd71243c204bc93196989f0faceeeba0c605"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fredemmott/hack-router/zipball/c909dd71243c204bc93196989f0faceeeba0c605",
+                "reference": "c909dd71243c204bc93196989f0faceeeba0c605",
+                "shasum": ""
+            },
+            "require": {
+                "hack-psr/psr7-http-message-hhi": "^0.2.0|^1.0.0",
+                "nikic/fast-route": "^1.0.0 || >0.7 <1.0"
+            },
+            "require-dev": {
+                "91carriage/phpunit-hhi": "^5.1",
+                "phpunit/phpunit": "^5.1",
+                "zendframework/zend-diactoros": "^1.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "URI routing for Hack",
+            "homepage": "https://github.com/fredemmott/hack-router",
+            "keywords": [
+                "hack",
+                "hhvm",
+                "router",
+                "routing"
+            ],
+            "time": "2016-11-04 23:52:52"
+        },
+        {
+            "name": "fredemmott/hack-router-codegen",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fredemmott/hack-router-codegen.git",
+                "reference": "24e2063b448d75aaf279b55a109eeb360967c531"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fredemmott/hack-router-codegen/zipball/24e2063b448d75aaf279b55a109eeb360967c531",
+                "reference": "24e2063b448d75aaf279b55a109eeb360967c531",
+                "shasum": ""
+            },
+            "require": {
+                "facebook/hack-codegen": "^1.1",
+                "fredemmott/definition-finder": "^1.3.0",
+                "fredemmott/hack-router": "^1.0.0rc7",
+                "fredemmott/type-assert": "^0.2.0 || ^1.0"
+            },
+            "require-dev": {
+                "91carriage/phpunit-hhi": "^5.5",
+                "phpunit/phpunit": "^5.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "URI routing for Hack with codegen",
+            "homepage": "https://github.com/fredemmott/hack-router-codegen",
+            "keywords": [
+                "hack",
+                "hhvm",
+                "router",
+                "routing"
+            ],
+            "time": "2016-12-04 23:51:52"
+        },
+        {
+            "name": "fredemmott/hhvm-autoload",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fredemmott/hhvm-autoload.git",
+                "reference": "b5c2a13c4f6c733a6029c3b3470443400c3224c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fredemmott/hhvm-autoload/zipball/b5c2a13c4f6c733a6029c3b3470443400c3224c5",
+                "reference": "b5c2a13c4f6c733a6029c3b3470443400c3224c5",
+                "shasum": ""
+            },
+            "require": {
+                "91carriage/phpunit-hhi": "^5.1",
+                "composer-plugin-api": "^1.0",
+                "fredemmott/definition-finder": "^1.0",
+                "fredemmott/hack-error-suppressor": "^1.0",
+                "hhvm": "^3.12"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.1"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": [
+                    "FredEmmott\\AutoloadMap\\ComposerPlugin"
+                ]
+            },
+            "autoload": {
+                "classmap": [
+                    "src/Writer.php",
+                    "src/"
+                ],
+                "files": [
+                    "src/AutoloadMap.php",
+                    "src/Config.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2017-01-27T04:56:25+00:00"
+        },
+        {
+            "name": "fredemmott/type-assert",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fredemmott/type-assert.git",
+                "reference": "4b6ccc8b6abb503308472c440f30a3e2d5e5d2e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fredemmott/type-assert/zipball/4b6ccc8b6abb503308472c440f30a3e2d5e5d2e0",
+                "reference": "4b6ccc8b6abb503308472c440f30a3e2d5e5d2e0",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "~3.12"
+            },
+            "require-dev": {
+                "91carriage/phpunit-hhi": "~5.1",
+                "phpunit/phpunit": "~5.1"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "description": "Convert untyped data to typed data",
+            "keywords": [
+                "TypeAssert",
+                "hack"
+            ],
+            "time": "2016-12-04T19:05:17+00:00"
+        },
+        {
+            "name": "hack-psr/psr7-http-message-hhi",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fredemmott/psr7-http-message-hhi.git",
+                "reference": "6635714788172c17961a7c157168cc4d90a8884f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fredemmott/psr7-http-message-hhi/zipball/6635714788172c17961a7c157168cc4d90a8884f",
+                "reference": "6635714788172c17961a7c157168cc4d90a8884f",
+                "shasum": ""
+            },
+            "require": {
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Typechecker definitions for PSR-7",
+            "homepage": "https://github.com/fredemmott/psr7-http-message-hhi",
+            "keywords": [
+                "hack",
+                "hhi",
+                "hhvm",
+                "http-message",
+                "psr",
+                "psr-7",
+                "psr7"
+            ],
+            "time": "2016-09-22T15:18:26+00:00"
+        },
+        {
+            "name": "nikic/fast-route",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/FastRoute.git",
+                "reference": "f3dcf5130e634b6123d40727d612ec6aa4f61fb3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/f3dcf5130e634b6123d40727d612ec6aa4f61fb3",
+                "reference": "f3dcf5130e634b6123d40727d612ec6aa4f61fb3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FastRoute\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov",
+                    "email": "nikic@php.net"
+                }
+            ],
+            "description": "Fast request router for PHP",
+            "keywords": [
+                "router",
+                "routing"
+            ],
+            "time": "2016-10-20T17:36:47+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06 14:39:51"
+        },
+        {
+            "name": "zendframework/zend-diactoros",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-diactoros.git",
+                "reference": "79367d68b5ea582e6504f26f8009d4574518f867"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/79367d68b5ea582e6504f26f8009d4574518f867",
+                "reference": "79367d68b5ea582e6504f26f8009d4574518f867",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.4 || ^7.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "~1.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.6 || ^5.5",
+                "zendframework/zend-coding-standard": "~1.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev",
+                    "dev-develop": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Diactoros\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "description": "PSR HTTP Message implementations",
+            "homepage": "https://github.com/zendframework/zend-diactoros",
+            "keywords": [
+                "http",
+                "psr",
+                "psr-7"
+            ],
+            "time": "2017-01-23 04:54:09"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "hackpack/hackunit",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/HackPack/HackUnit.git",
+                "reference": "32d16ead3392b9668e9a05ad755d4b844ee1722e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/HackPack/HackUnit/zipball/32d16ead3392b9668e9a05ad755d4b844ee1722e",
+                "reference": "32d16ead3392b9668e9a05ad755d4b844ee1722e",
+                "shasum": ""
+            },
+            "require": {
+                "fredemmott/definition-finder": "^1.0",
+                "hhvm": "^3.11"
+            },
+            "bin": [
+                "bin/hackunit"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HackPack\\HackUnit\\": "src/"
+                },
+                "files": [
+                    "src/Event/Listeners.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Scaturro",
+                    "email": "scaturrob@gmail.com",
+                    "role": "Creator"
+                },
+                {
+                    "name": "Isaac Leinweber",
+                    "email": "brotchen@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An xUnit testing framework for Hack",
+            "keywords": [
+                "hack",
+                "hacklang",
+                "hhvm",
+                "testing",
+                "xunit"
+            ],
+            "time": "2016-10-01T22:43:20+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
